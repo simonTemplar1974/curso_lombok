@@ -1,15 +1,9 @@
 package com.harrymesa9524.lombok;
 
 import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 
-@Getter
-@Setter
-@EqualsAndHashCode
-@ToString
+@Data
 @AllArgsConstructor
 public class Animal {
 
