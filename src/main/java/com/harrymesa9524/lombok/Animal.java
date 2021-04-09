@@ -7,8 +7,9 @@ import lombok.Data;
 @AllArgsConstructor
 public class Animal {
 
+	private Long idAnimal;
 	private String nombre;
-	private int peso;
 	private String raza;
+	private Double peso;
 	
 }
