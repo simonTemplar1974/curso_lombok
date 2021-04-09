@@ -27,26 +27,30 @@ public class Main {
 		/************* CLASE 5. @CleanUp ***************/
 		
 		//Cleanup
-		@Cleanup InputStream is = null;
-		int init;
-		char caracter;
-		try {
-			// new input stream created
-			is = new FileInputStream("C://anotacioncleanup.txt");
-
-			System.err.println("Datos leidos del Archivo :");
-			// reads till the end of the stream
-			while((init = is.read())!=-1) {
-				// converts integer to character
-				caracter = (char)init;
-				// prints character
-				System.err.print(caracter);
-			}
-		} catch(Exception e) {
-			// if any I/O error occurs
-			e.printStackTrace();
-		}
+//		@Cleanup InputStream is = null;
+//		int init;
+//		char caracter;
+//		try {
+//			// new input stream created
+//			is = new FileInputStream("C://anotacioncleanup.txt");
+//
+//			System.err.println("Datos leidos del Archivo :");
+//			// reads till the end of the stream
+//			while((init = is.read())!=-1) {
+//				// converts integer to character
+//				caracter = (char)init;
+//				// prints character
+//				System.err.print(caracter);
+//			}
+//		} catch(Exception e) {
+//			// if any I/O error occurs
+//			e.printStackTrace();
+//		}
 		
+		/************* CLASE 6. @Getter, @Setter ***************/
+//		AnimalGetterSetter animalGetterSetter = new AnimalGetterSetter();
+//		animalGetterSetter.se
+	
 	}
 
 }
