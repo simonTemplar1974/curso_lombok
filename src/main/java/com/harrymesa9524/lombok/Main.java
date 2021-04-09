@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		//@AllArgsConstructor
+		// @AllArgsConstructor
 		Animal animal = new Animal("Gato", 50, "Felino");
 
 		//Set
