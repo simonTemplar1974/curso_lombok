@@ -1,10 +1,8 @@
 package com.harrymesa9524.lombok;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 
-import lombok.Cleanup;
+import lombok.NoArgsConstructor;
 
 public class Main {
 
@@ -51,6 +49,11 @@ public class Main {
 //		AnimalGetterSetter animalGetterSetter = new AnimalGetterSetter();
 //		animalGetterSetter.se
 	
+		/************* CLASE 7. @NoArgsConstructor, @RequiredArgsConstructor, @AllArgsConstructor ***************/
+		AnimalArgsConstructor animalArgsConstructor = new AnimalArgsConstructor();
+		animalArgsConstructor = new AnimalArgsConstructor(); //@NoArgsConstructor
+		animalArgsConstructor = new AnimalArgsConstructor(1L, "nombre", "raza", 48.5);
+		animalArgsConstructor = new AnimalArgsConstructor(1L);
 	}
 
 }
