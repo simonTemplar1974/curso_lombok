@@ -3,6 +3,7 @@ package com.harrymesa9524.lombok;
 import java.io.IOException;
 
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
 public class Main {
 
@@ -50,10 +51,24 @@ public class Main {
 //		animalGetterSetter.se
 	
 		/************* CLASE 7. @NoArgsConstructor, @RequiredArgsConstructor, @AllArgsConstructor ***************/
-		AnimalArgsConstructor animalArgsConstructor = new AnimalArgsConstructor();
-		animalArgsConstructor = new AnimalArgsConstructor(); //@NoArgsConstructor
-		animalArgsConstructor = new AnimalArgsConstructor(1L, "nombre", "raza", 48.5);
-		animalArgsConstructor = new AnimalArgsConstructor(1L);
+//		AnimalArgsConstructor animalArgsConstructor = new AnimalArgsConstructor();
+//		animalArgsConstructor = new AnimalArgsConstructor(); //@NoArgsConstructor
+//		animalArgsConstructor = new AnimalArgsConstructor(1L, "nombre", "raza", 48.5);
+//		animalArgsConstructor = new AnimalArgsConstructor(1L);
+		
+		/************* CLASE 8. @NonNull ***************/
+		try {
+//			setNonNull(null);
+			setNonNull(new AnimalNonNull(1L, null, "raza", 45.6));
+		}catch(NullPointerException e) {
+			System.err.println("Error Controlado: "+e.getMessage());
+		}
+		
+		
+	}
+	
+	public static void setNonNull(@NonNull AnimalNonNull animal) {
+		System.err.println(animal.toString());
 	}
 
 }
