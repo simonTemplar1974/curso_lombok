@@ -12,5 +12,7 @@ public class Animal {
 	private String raza;
 	private Double peso;
 	private String apellido;
+	private int edad;
+	private String direccion;
 	
 }
